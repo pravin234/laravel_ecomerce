@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Demo\DemoController;
+
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Home\HomeSliderController;
 use App\Http\Controllers\Home\AboutController;
@@ -16,13 +16,6 @@ use App\Http\Controllers\Home\ContactController;
 // }); 
 
   
-Route::controller(DemoController::class)->group(function () {
-    Route::get('/', 'HomeMain')->name('home');
-
-
-    Route::get('/about', 'Index')->name('about.page')->middleware('check');
-    Route::get('/contact', 'ContactMethod')->name('cotact.page');
-});
 
 
  // Admin All Route 
