@@ -11,9 +11,9 @@ use App\Http\Controllers\Home\BlogController;
 use App\Http\Controllers\Home\FooterController;
 use App\Http\Controllers\Home\ContactController;
 
-// Route::get('/', function () {
-//     return view('frontend.index');
-// }); 
+Route::get('/', function () {
+    return view('frontend.index');
+}); 
 
   
 
